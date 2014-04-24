@@ -22,6 +22,7 @@ def total (number)
 	sum = 0
 	number.each do |x| 
 		sum += x
+	end
 end
 
 def sentence_maker (object_of_array)
