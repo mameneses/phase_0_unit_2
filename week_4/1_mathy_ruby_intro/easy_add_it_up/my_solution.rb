@@ -18,15 +18,17 @@
 
 # 2. Initial Solution
 
+
 def total (number)
 	sum = 0
 	number.each do |x| 
 		sum += x
+	return sum
 	end
 end
 
 def sentence_maker (object_of_array)
-	resulting_string = object_of_array.to_s.join (" ")
+	resulting_string = object_of_array.join(" ")
 	resulting_string.capitalize.concat(".")
 end
 
