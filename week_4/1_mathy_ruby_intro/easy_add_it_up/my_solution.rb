@@ -18,12 +18,12 @@
 
 # 2. Initial Solution
 
-
 def total (number)
 	sum = 0
 	number.each do |x| 
 		sum = sum + x
 	end
+	return sum
 end
 
 def sentence_maker (object_of_array)
