@@ -8,10 +8,13 @@
 
 # 1. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
-
+# 1. Create a method called total
+# 2. Make the method total sum the numbers in an array
+# 3. Create a method called sentence_maker
+# 4. Have sentance_maker turn all objects in an array into strings
+# 5. Have the methods sentence_maker combine individual strings into one string
+# 6. Of the resulting single string capitalize the first letter.
+# 7. Of the resulting string add a period punctuation at the end.
 
 # 2. Initial Solution
 
