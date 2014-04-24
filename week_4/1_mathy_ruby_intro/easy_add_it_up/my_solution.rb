@@ -35,6 +35,14 @@ end
 
 # 3. Refactored Solution
 
+def total (number)
+	number.inject {|sum, x| sum + x}
+end
+
+def sentence_maker (object_of_array)
+	object_of_array.join(" ").capitalize.concat(".")
+end
+
 
 
 # 4. Reflection 
