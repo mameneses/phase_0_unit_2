@@ -46,3 +46,10 @@ end
 
 
 # 4. Reflection 
+# This was an effective exercise to get use to Ruby once again after adjusting for JavaScript. 
+# I faced some problems with basic syntax and getting the code to past the test. I am still 
+# wrapping my mind around loops and iteration syntax. Luckily, stackoverflow.com and ruby-doc.org 
+# were helpful to gain some insight and find specific syntax for problems. I learned about 
+# injection and join methods for summing arrays. This helps boos my confidence in my ruby capabilities but 
+# I feel I still have a long way to go if it took me a while to get past the easy exercise. I 
+# enjoyed making the test pass. 
