@@ -1,6 +1,18 @@
 require_relative "my_solution" 
 #=> Make sure you change this to the name of your code file! Save that file
 # into this repo. 
+def separate_comma(number)
+   case number.to_s.length
+   when 0..3
+      puts number.to_s
+   when 4..6
+      puts number.to_s.insert(-4,",")
+   when 7..9
+      puts number.to_s.insert(-4,",").insert(-8,",")
+   when 10..12
+      puts number.to_s.insert(-4,",").insert(-8,",").insert(-12,",")
+   end
+end
 
 
 def random_num(min, max)
