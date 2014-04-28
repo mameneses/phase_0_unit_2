@@ -85,19 +85,19 @@ end
 
 class Array
 	def pad! (min_size, optional_val = "nil")
-	  padding = min_size - self.length
+	  padding = min_size - self.length        #added padding calculator
 		if self.length >= min_size            
 			self
 		else
-			padding.times do
+			padding.times do           #utilized the times function to add values.
 			  self << optional_val
 			end
 			return self
 		end
 	end
-
-	def pad (min_size, optional_val = "nil")
-		dup.pad! (min_size, optional_val)
+							#removed the additional "Class array"
+	def pad (min_size, optional_val = "nil")    
+		dup.pad! (min_size, optional_val)   # duplicated my original method!
   end
 end
 
