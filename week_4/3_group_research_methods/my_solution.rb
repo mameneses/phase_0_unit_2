@@ -181,8 +181,9 @@ puts my_array_deletion_method(i_want_pets, "a") == ["I", 3, "pets", "but", "I", 
 puts my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# This took longer than needed because the tet code was not for the 
-# source code. Also, i do not understand why the .include? method was not 
+# This took longer than needed because the test code was not for the 
+# source code, but was for the solution to the second method which was not 
+# to change the original source code. Also, i do not understand why the .include? method was not 
 # recognized within the .reject! method, when .reject! is looking for a 
 # true/false statment.
 # 
