@@ -120,4 +120,6 @@ p north_korean_cipher("ribx^wxst:$wsyxl%osvie,$xlir$neter,#xlir%xli%asvph!") == 
 p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?") == "can somebody just get me 100 bags of cool ranch doritos?"
 
 # Reflection
- 
+# I found this very challenging. It was one of the first projects I was able to work on for the week. 
+# Luckily my partner was a great help. I learned about acssi characters which greatly helped with 
+# deciphering the code. This reminded me of puzzle solving which I enjoy. 
