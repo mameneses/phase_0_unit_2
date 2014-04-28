@@ -16,7 +16,7 @@
 
 
 # 3. Initial Solution
-june2_cohort = [
+cohort = [
 "Adrian Soghoian",
 "Ajay Bir Singh",
 "Alec Ashford",
@@ -87,15 +87,20 @@ june2_cohort = [
 "Valentine Sverdlov",
 "Vivek M George",
 "Yariv Kirschner",
-"Zach Pflederer",]
+"Zach Pflederer",
+]
 # 
 def grouper (array_of_names)
-	people = array_of_names.length
-	if people % 4 ==0
-		array_of_names.each_slice(4).to_a
-	elsif people % 4 == 1
-		array_of_names.
-		
+	# people = array_of_names.length
+	# if people % 4 ==0
+		puts array_of_names.shuffle.each_slice(4)  
+	#elsif people % 4 == 1
+	#	array_of_names.drop(5).
+	#end
+end
+
+grouper(cohort)
+
 
 
 

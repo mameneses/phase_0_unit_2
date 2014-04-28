@@ -149,18 +149,28 @@ def my_array_deletion_method(source, thing_to_find)
 	end
 end
 
-#source.reject! { |element| element.include?(thing_to_find)}
+# I wanted to use the .reject! method which deletes and element fro an array
+# if the block withing the {} returns true but when I attempted to write the 
+# code as follows:
+# source.reject! { |element| element.include?(thing_to_find)}
+# It stated 'include?' is an undefined method so i went with the 
+# each and delete method which deletes an element from an array.
+# Additionally, the test code would not return true because it was using the
+# resulting code from person 2 (scott's) solution under the assumption that 
+# it changed the origianl array. I did not want to mess with scotts solution
+# so i changed the test to match the original array.
+
+##############
+##############
 
 # (2 of 2)  
 
 def my_hash_deletion_method(source, thing_to_delete)
 	source.reject! { |key,value| key == thing_to_delete }
 end
-
-# Identify and describe the ruby method you implemented. 
-# I have impemented the .reject! method. This 
-#
-#
+ 
+# I used the .reject! method to delete the Key and Value where the 
+# key == thing_to_delete and change the original string.
 
 
 ################## DRIVER CODE ###################################
@@ -171,8 +181,10 @@ puts my_array_deletion_method(i_want_pets, "a") == ["I", 3, "pets", "but", "I", 
 puts my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
-# 
+# This took longer than needed because the tet code was not for the 
+# source code. Also, i do not understand why the .include? method was not 
+# recognized within the .reject! method, when .reject! is looking for a 
+# true/false statment.
 # 
 # 
 # 
