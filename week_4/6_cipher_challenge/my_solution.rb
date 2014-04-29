@@ -2,7 +2,7 @@
 # U2.W4: Cipher Challenge
 
 
-# I worked on this challenge with: .
+# I worked on this challenge with: Britney Van Valkenburg
 
 
 
@@ -110,8 +110,11 @@ def north_korean_cipher(coded_message)
   return decoded_sentence  
 end
 
+<<<<<<< HEAD
 
 #Automated cipher creation; deleted unnecesary digit search; renmaed input to original 
+=======
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 
 # Driver Code:
 p north_korean_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver code and should print true
@@ -123,4 +126,10 @@ p north_korean_cipher("ribx^wxst:$wsyxl%osvie,$xlir$neter,#xlir%xli%asvph!") == 
 p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?") == "can somebody just get me 100 bags of cool ranch doritos?"
 
 # Reflection
+<<<<<<< HEAD
  
+=======
+# I found this very challenging. It was one of the first projects I was able to work on for the week. 
+# Luckily my partner was a great help. I learned about acssi characters which greatly helped with 
+# deciphering the code. This reminded me of puzzle solving which I enjoy. 
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b

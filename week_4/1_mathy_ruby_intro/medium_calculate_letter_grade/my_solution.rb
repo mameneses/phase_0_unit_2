@@ -20,7 +20,7 @@
 # 2. Initial Solution
 
 def get_grade (array_of_grades)
-	avg = (array_of_grades.inject(:+)/array_of_grades.length)
+	avg = (array_of_grades.reduce(:+)/array_of_grades.length)
 	case avg 
 		when 90..100
 		"A"
@@ -37,7 +37,7 @@ end
 
 # 3. Refactored Solution - This is a very optimised code but it could look cleaner.
 def get_grade (array_of_grades)
-	avg = (array_of_grades.inject(:+)/array_of_grades.length)
+	avg = (array_of_grades.reduce(:+)/array_of_grades.length)
 	case avg 
 		when 90..100 then "A"
 		when 80..89 then "B"

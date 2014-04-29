@@ -92,7 +92,10 @@ end
 p my_array_modification_method(i_want_pets, 1) == ["I", "want", 4, "pets", "but", "I", "only", "have", 3 ]
 p my_hash_modification_method(my_family_pets_ages, 2) == {"Evi" => 8, "Hoobie" => 5, "George" => 14, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 
 ########### ########### ########### ########### 
 ########### ########### ########### ########### 
@@ -102,6 +105,17 @@ p my_hash_modification_method(my_family_pets_ages, 2) == {"Evi" => 8, "Hoobie" =
 # PERSON 3 SOLUTIONS (BRITNEY)
 # ( 1 of 2 ) =>
 
+<<<<<<< HEAD
+=======
+########### ########### ########### ########### 
+########### ########### ########### ########### 
+
+
+
+# PERSON 3 SOLUTIONS (BRITNEY)
+# ( 1 of 2 ) =>
+
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 def my_array_sorting_method(source)
   source_to_string = []
   source.length.times do |i|
@@ -120,6 +134,24 @@ def my_hash_sorting_method(source)
   return source.sort_by {|name, age| age}
 end
 
+<<<<<<< HEAD
+
+# DRIVER CODE FOR PERSON 3 (BRITNEY) =>
+puts my_hash_sorting_method(my_family_pets_ages) == [["Annabelle", 0], ["Ditto", 3], ["Hoobie", 3], ["Poly", 4], ["Bogart", 4], ["Evi", 6], ["George", 12]] 
+
+puts my_array_sorting_method(i_want_pets) == ["2", "3", "I", "I", "but", "have", "only", "pets", "want"]
+
+
+
+# REFLECTIONS =>
+
+# I spent a lot of time just trying to figure out why rspec wasn't working properly. It's different
+# with JS in that tests without functions will cause an error. I did like looking up new methods,seeing the differences b/w array and hash return new vs modification. I think being able to play around in IRB with these is very helpful, too.
+
+###################################################
+###################################################
+=======
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 
 # DRIVER CODE FOR PERSON 3 (BRITNEY) =>
 puts my_hash_sorting_method(my_family_pets_ages) == [["Annabelle", 0], ["Ditto", 3], ["Hoobie", 3], ["Poly", 4], ["Bogart", 4], ["Evi", 6], ["George", 12]] 
@@ -137,7 +169,10 @@ puts my_array_sorting_method(i_want_pets) == ["2", "3", "I", "I", "but", "have",
 ###################################################
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 # Person 4 SOLUTONS (Matias)
 # (1 of 2) 
 
@@ -181,10 +216,18 @@ puts my_array_deletion_method(i_want_pets, "a") == ["I", 3, "pets", "but", "I", 
 puts my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
+<<<<<<< HEAD
 # This took longer than needed because the tet code was not for the 
 # source code. Also, i do not understand why the .include? method was not 
 # recognized within the .reject! method, when .reject! is looking for a 
 # true/false statment.
+=======
+# This took longer than needed because the test code was not for the 
+# source code, but was for the solution to the second method which was not 
+# to change the original source code. Also, i do not understand why the .include? method was not 
+# recognized within the .reject! method, when .reject! is looking for a 
+# true/false statment.
 # 
 # 
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 # 

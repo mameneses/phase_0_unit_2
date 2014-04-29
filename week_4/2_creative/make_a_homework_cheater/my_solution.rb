@@ -4,6 +4,7 @@
 # I worked on this challenge [myself].
 
 # 2. Pseudocode
+# i decided to spice up the project a bit, but keep the same form and function.
 
 #define a method called excuse with inputs
 # Input: teacher name, assignment name,due date,pet animal,distant reative,electronic device,city name,your name
@@ -22,7 +23,7 @@ def excuse(teacher_name,assignment_name,due_date,pet_animal,distant_reative,elec
 	assignment in time. I would like a one week extension. Sincerely #{your_name}"
 end
 # 4. Refactored Solution
-
+#unsure what to do here other than to make my excuse shorter
 
 
 
@@ -46,5 +47,7 @@ smitty_excuse = excuse("Mr. House","term paper","Monday","iguana","uncle","lamp"
 
 
 # 5. Reflection 
+# Due to my limited time this week i took the easy route. It was good practice, but a little repetative
+#to write the test driver code.
 
 

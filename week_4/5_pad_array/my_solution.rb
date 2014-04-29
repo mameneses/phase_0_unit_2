@@ -4,6 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
 
+<<<<<<< HEAD
 # I worked on this challenge [myself].
 
 # 1. Pseudocode
@@ -26,6 +27,11 @@
 # I worked on this challenge by myself.
 
 # 1. Pseudocode
+=======
+# I worked on this challenge by myself.
+
+# 1. Pseudocode
+>>>>>>> fd8d6a3742f49cea9b823e2e606355fd3858bb8b
 # define a method called pad and a seperate method pad!.
 # each method accepts minimum size (non-Negative integers) and an optional pad value as arguments.
 # for pad ( if array.length is < min size, return an array with .length == min size
