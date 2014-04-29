@@ -42,10 +42,11 @@ class GuessingGame
   def solved?
     if @guess == @answer
       return true
+     else
+      return false
     end
   end
 end
-
 
 # 4. Refactored Solution
 #
@@ -58,11 +59,13 @@ end
 
 game = GuessingGame.new(50)
 
+puts game.solved? == false
+
 puts game.guess(10) == :low
 
 puts game.guess(100) == :high
 
-puts game.guess(50) == :corret
+puts game.guess(50) == :correct
 
 puts game.solved? == true 
 
