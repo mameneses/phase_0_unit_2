@@ -14,8 +14,8 @@
 # 4. if @guess is less than @answer return symbol ':high' 
 # 5. elsif @guess is more than @answer reurn symbol ':low'
 # 6. elsif @guess is equal to @answer return @answer
-# 7. define a metho 'solved?'
-# 8. 
+# 7. define a method 'solved?'
+# 8. if @guess is equal to @answer return true else return false
 
 
 # 3. Initial Solution
