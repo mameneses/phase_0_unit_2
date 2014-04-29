@@ -5,18 +5,32 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
+# Input: answer  and guess
+# Output: :high, :low or correct answer
 # Steps:
+# 1. 
+#
 
 
 # 3. Initial Solution
 
 class GuessingGame
   def initialize(answer)
-    # Your initialization code goes here
+    @answer = answer
   end
-  
+  def guess (guess)
+    if guess < @answer
+      return :high
+    elsif guess > @answer
+      return :low
+    elsif
+      guess == @answer
+      return @answer
+    end
+  end
+  def solved?
+    
+  end
   # Make sure you define the other required methods, too
 end
 
