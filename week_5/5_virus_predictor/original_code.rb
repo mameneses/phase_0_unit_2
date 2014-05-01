@@ -2,6 +2,10 @@
 
 # I worked on this challenge [myself]
 
+# What this code is doing:
+# Using the population size and population density for each state, this code is attempting to predict  
+# the effect of a virus based on the amount of deaths it would cause as well as how fast it would spread.
+
 # EXPLANATION OF require_relative
 # the required relative is pointing to a 'relative' file that is being loaded to compliment the 
 # current file. In this instance the realtive file: 'state_data' contains the information this is
@@ -10,7 +14,6 @@
 require_relative 'state_data'
 
 class VirusPredictor
-
   def initialize(state_of_origin, population_density, population, region, regional_spread)
     @state = state_of_origin
     @population = population
