@@ -1,10 +1,12 @@
 # U2.W5: Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [myself]
 
 # EXPLANATION OF require_relative
-#
-#
+# the required relative is pointing to a 'relative' file that is being loaded to compliment the 
+# current file. In this instance the realtive file: 'state_data' contains the information this is
+# going to be manipulated.
+
 require_relative 'state_data'
 
 class VirusPredictor
