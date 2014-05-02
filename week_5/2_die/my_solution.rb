@@ -5,21 +5,28 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
+# Input: an array of strings
+# Output: ad random string from that array
 # Steps:
+# 1. define a method to initialzie the class die and set an instance variable @labels equal to labels
 
 
 # 3. Initial Solution
 
 class Die
   def initialize(labels)
+  	@labels = labels
   end
-
   def sides
+  	if @labels.empty?
+  		raise ArgumentError.new('The array needs elements')
+  	else
+  		return @labels.length
+  	end
   end
 
   def roll
+  	@labels.sample
   end
 end
 
@@ -34,7 +41,13 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
 
+puts die.sides == 6
+
+puts die.roll
+
+#puts die.to_a.include? (die.roll)
 
 
 
