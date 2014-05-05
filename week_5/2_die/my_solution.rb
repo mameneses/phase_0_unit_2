@@ -53,3 +53,5 @@ puts die.roll
 
 
 # 5. Reflection 
+#This exercise really helped to solidify my understanding of classes and 
+#initializing those classes. It was helpful to build off of the previous die 1 exercise. 
