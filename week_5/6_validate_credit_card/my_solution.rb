@@ -138,7 +138,13 @@ class CreditCard
 #---------------------------------------------
 
 # REFLECTION =>
-
+# This was a very challenging problem and it greatly helped to pair. I really liked 
+# using real world examples to understand concepts and to use the real world solution 
+# to create my own solution. I found it difficult to work with one integer when an 
+#array of integers is needed. This led to my figuring out solutions on my own. (why is 
+# there no antithesis of .join for integers?!). I also ran into the issues of  unexpected 
+# keyword end errors which were also frustrating. But I did learn about split methods for 
+# strings and iterating over the string to make then integers. 
 
 
 
