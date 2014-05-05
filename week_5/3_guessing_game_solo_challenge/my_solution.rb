@@ -27,12 +27,12 @@ class GuessingGame
   end
   def guess (guess)
     @guess = guess
-    if guess > @answer
+    if @guess > @answer
       return :high
-    elsif guess < @answer
+    elsif @guess < @answer
       return :low
     elsif
-      guess == @answer
+      @guess == @answer
       return :correct
     end
   end
@@ -69,3 +69,10 @@ puts game.solved? == true
 
 
 # 5. Reflection 
+# I found this to be helpful to fully grasp classes and use of instance 
+# variables. Writing the driver test code was also helpful in nailing 
+# down these concepts. I still have issues with refactoring. Usually 
+# while writing the code I am looking for the more efficient way to 
+# complete the problem which doesn’t leave much to refactor later. I 
+# enjoyed the problem overall. In this program I am not sure the purpose 
+# of having the responses to the guess being a symbol. 

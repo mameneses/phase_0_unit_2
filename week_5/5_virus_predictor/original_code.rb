@@ -8,8 +8,13 @@
 
 # EXPLANATION OF require_relative
 # the required relative is pointing to a 'relative' file that is being loaded to compliment the 
-# current file. In this instance the realtive file: 'state_data' contains the information this is
-# going to be manipulated.
+# current file. In this instance the realtive file: 'state_data' contains the information that is
+# going to be manipulated to make predictions.
+# 
+# state_data: what is going on here?
+# In the state_data file it it has a hash where the key is each state and the value are 
+# nested hashes that use different syntax. For the newer hash syntax (key: value), as opposed
+# to (key => value), typically your key will be a symbol.
 
 require_relative 'state_data'
 
@@ -21,14 +26,15 @@ class VirusPredictor
     @region = region
     @next_region = regional_spread
   end
-
-  def virus_effects  #HINT: What is the SCOPE of instance variables?
+#the virus_effects method is responisbile for returning the predicted_deaths and speed_of_spread methods within the VirusPredictor class.
+  def virus_effects  #HINT: What is the SCOPE of instance variables? these methods can only be used within a virusPredictor class, its scope.
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
-  private  #what is this?  what happens if it were cut and pasted above the virus_effects method
-
+  private  #private methods can not be called with an explicit receiver, the receiver is always 'self'.
+# the preducted_deaths method is responsible for taking the inputs of population_density, population and state and returning the estimated number of deaths
+# that will be caused by an 'this' outbreak.
   def predicted_deaths(population_density, population, state)
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -45,7 +51,8 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+# the speed_of_spread method is responisble for taking the inputs of populations_density and state to predict the amount of time it will
+# take for the vrius to spread across each state 
   def speed_of_spread(population_density, state) #in months
     speed = 0.0
 
@@ -71,7 +78,11 @@ end
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
-
+ # 
+STATE_DATA.each do |state, info|
+  selected_state = VirusPredictor.new(state, info[:population_density], info[:population], info[:region], info[:regional_spread])
+  selected_state.virus_effects
+end
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population], STATE_DATA["Alabama"][:region], STATE_DATA["Alabama"][:regional_spread]) 
 alabama.virus_effects

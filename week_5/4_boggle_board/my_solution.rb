@@ -41,7 +41,8 @@ puts game.create_word([0,1], [1,1], [2,1], [3,2]) == "rock"
 puts game.create_word([0,1], [1,0], [1,2], [3,3]) == "ride"
 
 # Reflection 
-# 
+# This was a good way to find out where to start with this problem. I figured out that the astrkis (*)
+# is allowing for mulitple arguments to be inputed into the method with out having to define how many.
 
 #-------------------------------------------------------------------------------
 
@@ -60,14 +61,13 @@ end
 
 # Refactored Solution
 
-
 # DRIVER TESTS GO BELOW THIS LINE
 
 puts game.get_row(0) == ["b", "r", "a", "e"]
 
 puts game.get_row(3) == ["t", "a", "k", "e"]
 # Reflection 
-
+#this was very straight forward as the rows are already broken into arrays.
 
 
 #-------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ puts game.get_row(3) == ["t", "a", "k", "e"]
 
 # Pseudocode
 # create a method 'get_col' and set a parameter 'col'
-# for each each array within the larger array call the 'col'th value and trun it unto an array.
+# for each each array within the larger array call the 'col'th value and turn it unto an array.
 
 # Initial Solution
 class Boggle
@@ -95,3 +95,6 @@ puts game.get_col(1) == ["r", "o", "c", "a"]
 puts game.get_col(3) == ["e", "t", "r", "e"]
 
 # Reflection 
+# This was more tricky to understand and required a good amount of research on how to call for a sepecific 
+# index value within nested arrays. I had an ah ha moment when it came to mapping over the the board using their 
+# index values.
