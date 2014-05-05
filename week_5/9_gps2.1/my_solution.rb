@@ -17,10 +17,12 @@ def bakery_num(num_of_people, fav_food)
       has_fave = true   
     end
   end
+  
   if has_fave == false 
     raise ArgumentError.new("You can't make that food")
   else
-    fav_food_qty = my_list[fav_food]  
+    fav_food_qty = my_list[fav_food] 
+    
   if num_of_people % fav_food_qty == 0         
     num_of_food = num_of_people / fav_food_qty  
       return "You need to make #{num_of_food} #{fav_food}(s)." 
@@ -28,13 +30,13 @@ def bakery_num(num_of_people, fav_food)
     while num_of_people > 0                     
       if num_of_people / my_list["pie"] > 0        
         pie_qty = num_of_people / my_list["pie"]      
-         num_of_people = num_of_people % my_list["pie"] 
+        num_of_people = num_of_people % my_list["pie"] 
       elsif num_of_people / my_list["cake"] > 0    
         cake_qty = num_of_people / my_list["cake"]
         num_of_people = num_of_people % my_list["cake"]
       else
         cookie_qty = num_of_people                 
-      num_of_people = 0
+        num_of_people = 0
       end
     end
     return "You need to make #{pie_qty} pie(s), #{cake_qty} cake(s), and #{cookie_qty} cookie(s)." 
@@ -60,7 +62,6 @@ p bakery_num(41, "cake") == "You need to make 5 pie(s), 0 cake(s), and 1 cookie(
 
 
 #  Reflection 
- #REFLECTION
  #This was very helpful to get experience on working on other peoples code and taking steps to write better 
  #psuedo code. If was frustrating at time to understand the poorly written code. I learned new tricks on how 
  #to call the value of a certain key within an array. Having the guide was very helpful to get us unstuck 
