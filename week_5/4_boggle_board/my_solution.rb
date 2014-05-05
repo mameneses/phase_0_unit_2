@@ -15,10 +15,10 @@ boggle_board = [["b", "r", "a", "e"],
 # 1. create class 'Boggle'
 # 2. define a method 'initialize' and create a parameter of matrix
 # 3. set the instance variable '@board' = to matrix. end.
-# 1. defin a method create_word and that an parameter of an array 'board'  and a second parameter of 'coords'
-# 2. coords should accept two intiger valuses within array and should allow for more pareameters to be passed(*splat)
-# 2. for each 'ccords' use '@board' to designate the corresponding value for the 'coords'
-# 3. join the results for each 'coords' listed with out any spaces 
+# 4. defin a method create_word and that an parameter of an array 'board'  and a second parameter of 'coords'
+# 5. coords should accept two intiger valuses within array and should allow for more pareameters to be passed(*splat)
+# 6. for each 'ccords' use '@board' to designate the corresponding value for the 'coords'
+# 7. join the results for each 'coords' listed with out any spaces 
 
 # Initial Solution
 class Boggle
