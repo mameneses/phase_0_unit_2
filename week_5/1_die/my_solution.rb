@@ -52,3 +52,8 @@ nope = Die.new(0)
 puts nope
 
 # 5. Reflection 
+# I felt that this exercise was very straight forward and easy to understand. 
+# I learned about the array method sample which is a good way to randomly generate 
+# an elements within an array, which is the same as rolling a die. I did not have many 
+# issues with this exercise and it was a good introduction to setting a class, initializing 
+# the class and creating instance variables.  
