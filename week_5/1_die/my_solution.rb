@@ -20,12 +20,12 @@
 class Die
   def initialize(sides)
     @sides = sides
-  end
-  
-  def sides
     if @sides < 2
       raise ArgumentError.new('Only numbers one or greater are allowed')
     end
+  end
+  
+  def sides
     return @sides
   end
   
